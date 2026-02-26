@@ -2,122 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>C. Ruthrabala | Portfolio</title>
+    <title>Shalini S | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body{
-            margin:0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            background:#f4f6fb;
-            color:#333;
         }
 
-        header{
-            background:#1e3a8a;
-            color:white;
-            text-align:center;
-            padding:30px 20px;
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
         }
 
-        section{
-            background:white;
-            margin:30px auto;
-            padding:25px;
-            width:85%;
-            border-radius:10px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.08);
+        header {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
 
-        h2{
-            color:#1e3a8a;
-            border-bottom:2px solid #1e3a8a;
-            padding-bottom:5px;
-            margin-bottom:15px;
+        header h1 {
+            font-size: 32px;
         }
 
-        ul{
-            margin-left:20px;
+        header p {
+            font-size: 18px;
         }
 
-        footer{
-            text-align:center;
-            padding:15px;
-            background:#1e3a8a;
-            color:white;
-            margin-top:40px;
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #4e73df;
+            border-bottom: 2px solid #4e73df;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4e73df;
+            color: white;
         }
 
         @media(max-width:768px){
-            section{
-                width:95%;
+            header h1{
+                font-size:24px;
             }
         }
     </style>
 </head>
-
 <body>
 
 <header>
-    <h1>C. Ruthrabala</h1>
-    <p>Student Portfolio</p>
+    <h1>Shalini S</h1>
+    <p>Computer Science Student | Developer</p>
+    <p>Email: shalusasi261@gmail.com</p>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <p><b>Name:</b> C. Ruthrabala</p>
-    <p><b>Roll Number:</b> RA2411003050245</p>
-    <p><b>Email:</b> ruthrabala7397@gmail.com</p>
-    <p><b>Skills:</b> C, Python, Java</p>
+    <h2>Student Profile</h2>
+    <div class="card">
+        <p><strong>Roll No:</strong> RA2411003050243</p>
+        <p><strong>Skills:</strong> Python, C, Java</p>
+    </div>
 </section>
 
 <section>
-    <h2>Education</h2>
-    <p><b>CGPA:</b> 8.45</p>
-    <h3>Completed Courses</h3>
-    <ul>
-        <li>Design and Analysis of Algorithms</li>
-        <li>Database Management System</li>
-        <li>Artificial Intelligence</li>
-        <li>Internet of Things</li>
-    </ul>
+    <h2>Academic Details</h2>
+    <div class="card">
+        <p><strong>Semester Result:</strong> 8.05 CGPA</p>
+        <p><strong>Courses:</strong></p>
+        <ul>
+            <li>Design and Analysis of Algorithms</li>
+            <li>Database Management System</li>
+            <li>Artificial Intelligence</li>
+            <li>Internet of Things</li>
+        </ul>
+    </div>
 </section>
 
 <section>
     <h2>Projects</h2>
 
-    <h3>1. Virtual Memory Simulator</h3>
-    <p>A system-level simulation project developed to demonstrate how virtual memory management works, including paging and memory allocation techniques.</p>
-    <p><b>Tools Used:</b> Visual Studio Code</p>
+    <div class="card">
+        <h3>IoT Based Smart Water Tank Level Monitoring System</h3>
+        <p>
+        IoT-based system using ESP32 and ultrasonic sensor to monitor tank water levels.
+        Displays data on OLED and sends alerts to mobile via Wi-Fi.
+        Prevents overflow and motor damage.
+        </p>
+        <p><strong>Tools:</strong> ESP32, Ultrasonic Sensor, OLED Display, Wi-Fi, IoT App</p>
+    </div>
 
-    <br>
-
-    <h3>2. IoT Enabled Smart Street Lighting System</h3>
-    <p>An IoT-based smart lighting solution that automatically controls street lights based on motion detection and environmental conditions, improving energy efficiency.</p>
-    <p><b>Tools Used:</b> ESP32, PIR Sensor</p>
+    <div class="card">
+        <h3>Skin Lesion Classification using Deep Learning</h3>
+        <p>
+        Deep Learning system using CNN to classify skin lesions as benign or malignant.
+        Trained using HAM10000 dataset. Achieved 92–95% accuracy.
+        Includes preprocessing, augmentation, and Grad-CAM visualization.
+        </p>
+        <p><strong>Tools:</strong> Python, CNN, Deep Learning, Image Processing, Grad-CAM</p>
+    </div>
 
 </section>
 
 <section>
     <h2>Certifications</h2>
-    <ul>
-        <li>Java Programming for Beginners – Platform: Coursera</li>
-        <li>Active Listening: Enhancing Communication Skills – Platform: Coursera</li>
-        <li>Introduction to Visual Basic Programming – Platform: Coursera</li>
-        <li>The Sustainable Development Goals - A Global Transdisciplinary Vision for the Future – Platform: Coursera</li>
-    </ul>
+    <div class="card">
+        <ul>
+            <li>The Sustainable Development Goals – Coursera</li>
+            <li>Introduction to Generative AI for Developers – Coursera</li>
+            <li>Active Listening – Coursera</li>
+            <li>Introduction to Visual Basic Programming – Coursera</li>
+            <li>Introduction to Prompt Engineering – Simplilearn</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Internship</h2>
+    <div class="card">
+        <ul>
+            <li>Eduskills – Java Full Stack Developer Virtual Internship</li>
+            <li>Eduskills – Android Developer Virtual Internship</li>
+        </ul>
+    </div>
 </section>
 
 <section>
     <h2>Achievements</h2>
-    <ul>
-        <li>Participated in Hackathon</li>
-        <li>Noobfest Startup Hackathon</li>
-    </ul>
+    <div class="card">
+        <p><strong>Hackathon Participation:</strong></p>
+        <ul>
+            <li>CODECRAFT 25 Hackathon</li>
+            <li>Noobfest Startup Hackathon</li>
+        </ul>
+    </div>
 </section>
 
 <footer>
-    ©️ 2026 C. Ruthrabala | Portfolio Website
+    ©️ 2026 Shalini S | Portfolio Website
 </footer>
 
 </body>
