@@ -1,109 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>C.Ruthrabala - Portfolio</title>
+    <title>C.Ruthrabala | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Segoe UI', sans-serif;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
         }
 
-        body{
-            background: linear-gradient(135deg,#e0f7fa,#fce4ec);
-            padding:40px 20px;
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 30px;
         }
 
-        .container{
-            max-width:1000px;
-            margin:auto;
+        section {
+            background: white;
+            margin: 25px auto;
+            padding: 25px;
+            width: 85%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .card{
-            background: rgba(255,255,255,0.8);
-            backdrop-filter: blur(8px);
-            padding:25px;
-            margin-bottom:25px;
-            border-radius:15px;
-            box-shadow:0 10px 25px rgba(0,0,0,0.1);
-            transition:0.3s;
+        h2 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 5px;
         }
 
-        .card:hover{
-            transform:translateY(-5px);
+        .project {
+            margin-top: 15px;
+            padding: 15px;
+            background: #eef3f8;
+            border-radius: 8px;
         }
 
-        header{
-            text-align:center;
-            margin-bottom:40px;
+        ul {
+            line-height: 1.8;
         }
 
-        header h1{
-            font-size:34px;
-            color:#333;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4a90e2;
+            color: white;
+            margin-top: 30px;
         }
-
-        header p{
-            color:#555;
-        }
-
-        h2{
-            margin-bottom:15px;
-            color:#6a1b9a;
-            border-left:5px solid #6a1b9a;
-            padding-left:10px;
-        }
-
-        ul{
-            margin-left:20px;
-            line-height:1.8;
-        }
-
-        .project{
-            background:#ffffff;
-            padding:15px;
-            border-radius:10px;
-            margin-top:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.08);
-        }
-
-        footer{
-            text-align:center;
-            margin-top:30px;
-            padding:20px;
-            font-size:14px;
-            color:#555;
-        }
-
-        @media(max-width:768px){
-            body{
-                padding:20px 10px;
-            }
-        }
-
     </style>
 </head>
 
 <body>
-
-<div class="container">
 
 <header>
     <h1>C.Ruthrabala</h1>
     <p>Student Portfolio</p>
 </header>
 
-<div class="card">
+<section>
     <h2>About Me</h2>
     <p><strong>Roll Number:</strong> RA2411003050245</p>
     <p><strong>Email:</strong> ruthrabala7397@gmail.com</p>
     <p><strong>Skills:</strong> C, Python, Java</p>
-</div>
+</section>
 
-<div class="card">
+<section>
     <h2>Education</h2>
     <p><strong>CGPA:</strong> 8.61</p>
     <ul>
@@ -112,32 +78,32 @@
         <li>Artificial Intelligence</li>
         <li>Internet of Things</li>
     </ul>
-</div>
+</section>
 
-<div class="card">
+<section>
     <h2>Projects</h2>
 
     <div class="project">
         <h3>IoT Enabled Smart Street Lighting System</h3>
         <p>
-            Developed an IoT-based smart street lighting system using ESP32 and PIR sensor 
+            Developed a smart street lighting system using ESP32 and PIR sensor 
             to automatically control lighting based on motion detection, improving energy efficiency.
         </p>
-        <p><strong>Tools:</strong> ESP32, PIR Sensor</p>
+        <p><strong>Tools Used:</strong> ESP32, PIR Sensor</p>
     </div>
 
     <div class="project">
         <h3>Virtual Memory Simulator</h3>
         <p>
-            Implemented a virtual memory simulator demonstrating paging and 
-            page replacement algorithms to understand OS memory management.
+            Implemented a virtual memory simulator to demonstrate paging and 
+            page replacement algorithms for better understanding of OS memory management.
         </p>
-        <p><strong>Tools:</strong> Visual Studio Code</p>
+        <p><strong>Tools Used:</strong> Visual Studio Code</p>
     </div>
 
-</div>
+</section>
 
-<div class="card">
+<section>
     <h2>Certifications</h2>
     <ul>
         <li>Java Programming for Beginners – Coursera</li>
@@ -146,22 +112,20 @@
         <li>The Sustainable Development Goals - A Global Transdisciplinary Vision for the Future – Coursera</li>
         <li>Introduction to Prompt Engineering – Simplilearn</li>
     </ul>
-</div>
+</section>
 
-<div class="card">
+<section>
     <h2>Achievements</h2>
     <ul>
         <li>Participated in Hackathon</li>
         <li>CODECRAFT 25 Hackathon</li>
         <li>Noobfest Startup Hackathon</li>
     </ul>
-</div>
+</section>
 
 <footer>
-    ©️ 2026 C.Ruthrabala | Portfolio Website
+    ©️ 2026 C.Ruthrabala | Portfolio
 </footer>
-
-</div>
 
 </body>
 </html>
